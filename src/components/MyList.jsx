@@ -9,7 +9,7 @@ const MyList = (  ) => {
     const [error, setError] = useState(false);
 
     const fetchData = async () => {
-        const url = "https://api.spaceflightnewsapi.net/v4/articles";
+        const url = "https://api.spaceflightnewsapi.net/v4/articles/?limit=15";
         try {
             const resp = await fetch(url)
             if (resp.status >= 300) {
